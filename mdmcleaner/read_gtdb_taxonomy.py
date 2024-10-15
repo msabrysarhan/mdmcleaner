@@ -16,9 +16,9 @@ refseq_dbsource_dict["crc"] = { "url": "{}/release-catalog/".format(ftp_adress_r
 
 MD5FILEPATTERN_GTDB = "MD5SUM*"
 gtdb_server = "https://data.ace.uq.edu.au/public/gtdb/data/releases/release220/220.0"
-gtdb_source_dict = { "gtdb_taxfiles" : { "url": "{}/".format(gtdb_server), "pattern" : "{}".format(",".join(["*_taxonomy.tsv", MD5FILEPATTERN_GTDB]))}, \
-					 "gtdb_fastas" : { "url": "{}/genomic_files_reps".format(gtdb_server), "pattern" : "gtdb_genomes_reps.tar.gz,gtdb_proteins_aa_reps.tar.gz" }, \
-					 "gtdb_vs_ncbi_lookup" : { "url" : "{}/auxillary_files".format(gtdb_server), "pattern" : "*_vs_*.xlsx" } } #todo: remove gtdb_vs_ncbi_lookuptables
+gtdb_source_dict = { "gtdb_taxfiles" : { "url": "{}/".format(gtdb_server), "pattern" : "{}".format(",".join(["*_taxonomyr_r220.tsv", MD5FILEPATTERN_GTDB]))}, \
+					 "gtdb_fastas" : { "url": "{}/genomic_files_reps".format(gtdb_server), "pattern" : "gtdb_genomes_reps_r220.tar.gz,gtdb_proteins_aa_reps_r220.tar.gz" }, \
+					 "gtdb_vs_ncbi_lookup" : { "url" : "{}/auxillary_files".format(gtdb_server), "pattern" : "*_vs_*_r220*.xlsx" } } #todo: remove gtdb_vs_ncbi_lookuptables
 
 silva_server = "https://www.arb-silva.de/fileadmin/silva_databases/current"
 ALT_silva_server = "ftp://arb-silva.de/current" # apparently sometimes one or the other of the silva servers is not reachable. therefore always trying both alternately
