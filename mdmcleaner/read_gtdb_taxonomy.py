@@ -15,7 +15,7 @@ refseq_dbsource_dict = { refseq_vireukcat : {"url":"{}/{}/".format(ftp_adress_re
 refseq_dbsource_dict["crc"] = { "url": "{}/release-catalog/".format(ftp_adress_refseqrelease), "pattern" : "release*.files.installed" } #TODO: add eukaryotic 18S/28S + ITS seqeunces to this! either silva or ncbi?
 
 MD5FILEPATTERN_GTDB = "MD5SUM*"
-gtdb_server = "https://data.ace.uq.edu.au/public/gtdb/data/releases/latest"
+gtdb_server = "https://data.ace.uq.edu.au/public/gtdb/data/releases/release220/220.0"
 gtdb_source_dict = { "gtdb_taxfiles" : { "url": "{}/".format(gtdb_server), "pattern" : "{}".format(",".join(["*_taxonomy.tsv", MD5FILEPATTERN_GTDB]))}, \
 					 "gtdb_fastas" : { "url": "{}/genomic_files_reps".format(gtdb_server), "pattern" : "gtdb_genomes_reps.tar.gz,gtdb_proteins_aa_reps.tar.gz" }, \
 					 "gtdb_vs_ncbi_lookup" : { "url" : "{}/auxillary_files".format(gtdb_server), "pattern" : "*_vs_*.xlsx" } } #todo: remove gtdb_vs_ncbi_lookuptables
