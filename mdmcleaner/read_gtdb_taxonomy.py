@@ -258,7 +258,7 @@ def download_gtdb_stuff(sourcedict = gtdb_source_dict, targetfolder=None, verbos
 			tokens = line.strip().split()
 			checksum = tokens[0]
 			filename = os.path.basename(tokens[1])
-			filename = re.sub(subpattern, "", filename) #gtdb renames all files in the latest folder (removing version from filename), but not in the corresponding md5-file... 
+			#filename = re.sub(subpattern, "", filename) #gtdb renames all files in the latest folder (removing version from filename), but not in the corresponding md5-file... 
 			for pattern in patternlist:
 				if fnmatch.fnmatch(filename, pattern):
 					expectedfile = os.path.join(targetdir, filename)
